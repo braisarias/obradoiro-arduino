@@ -5,7 +5,7 @@
 \mode<presentation>{\usetheme[secheader]{Boadilla}}
 
 \title{Obradoiro de introdución a Arduino}
-\author[Brais, Rafa, Tucho]{ Brais \\ Rafa \\ Tucho}
+\author[Brais, Rafa, Tucho]{ Brais Arias \\ Rafa Couto \\ Tucho Méndez}
 \date{2014-10-08}
 
 \begin{document}
@@ -23,108 +23,231 @@ logo gpul
   \tableofcontents
 \end{frame}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Hardware Libre}
 \begin{frame}
 \huge{\centerline{\textbf{\color{blue} \insertsection}}}
 \end{frame}
 
-\begin{frame}{Que é?}
+% % % % % % % % % %
+\begin{frame}
+\begin{itemize}
+\item Similar ao Software Libre e Coñecemento Libre.
+\item Deseño dipoñíbel para:
+\begin{itemize}
+ \item Estudar
+ \item Modificar
+ \item Distribuir
+ \item Materializar
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+% % % % % % % % % %
+\begin{frame}{Proxectos Hardware Libre}
+
+\begin{columns}
+\begin{column}{0.25\textwidth}
+\begin{itemize}
+\item Aurora
+\item Uze
+\item Arduino
+\item Reprap
+\item ...
+\end{itemize}
+\end{column}
+\begin{column}{0.75\textwidth}
+
+\begin{columns}
+	\begin{column}{0.35\textwidth}
+		\includegraphics[width=100pt]{./img/exemplo_Aurora.png}
+
+		\includegraphics[width=100pt]{./img/exemplo_Uze.png}
+	\end{column}
+	\begin{column}{0.35\textwidth}
+		\includegraphics[width=100pt]{./img/Arduino_Uno.png}
+
+		\includegraphics[width=100pt]{./img/exemplo_RepRap_v2_Mendel.png}
+	\end{column}
+\end{columns}
+
+\end{column}
+\end{columns}
+
 
 \end{frame}
 
-\begin{frame}{Proxectos}
 
-\end{frame}
-
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Arduino}
 \begin{frame}
 \huge{\centerline{\textbf{\color{blue} \insertsection}}}
 \end{frame}
 
-\begin{frame}{Que é Arduino?}
-% \frametitle{}
-% \includegraphics[width=200pt]{./img/secam.png}
-\begin{itemize}
- \item Controladoras
- \item IDE
- \item Comunidade
-\end{itemize}
 
-coller algo de http://arduino.cc/en/Guide/Introduction
+% % % % % % % % % %
+\begin{frame}{Que é Arduino?}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+	\begin{itemize}
+	\item Placa de prototipado eletrónico
+	\item Hardware Libre
+	\item Orixinario en 2005 en Italia por artistas
+	\item David Cuartielles e Massimo Banzi
+	\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+	\includegraphics[width=150pt]{./img/Arduino_Uno.png}
+\end{column}
+\end{columns}
+
 \end{frame}
 
+% \begin{frame}
+%
+% \end{frame}
+
+% % % % % % % % % %
+\begin{frame}{Que máis é Arduino?}
+\begin{itemize}
+ \item Non solo placas controladoras
+ \item IDE (Entorno de Desenvolvemento)
+ \item Liguaxe de programación
+ \item Comunidade (playground.arduino.cc, bricolabs \dots)
+\end{itemize}
+
+\end{frame}
+
+% % % % % % % % % %
 \begin{frame}{Arquitectura}
-\begin{columns}[t]
-	\begin{column}[t]{0.4\textwidth}
+\begin{columns}
+	\begin{column}{0.4\textwidth}
 		\begin{itemize}
-			\item micro
-			\item reloxo
-			\item controlador USB (todo)
-			\item entradas saidas
+			\item Microcontrolador ATmega
+			\item Reloxo
+			\item Controlador USB (non todos)
+			\item Entradas e saidas (pines)
 			\item EEPROM
 		\end{itemize}
 	\end{column}
-	\begin{column}[t]{0.6\textwidth}
+	\begin{column}{0.6\textwidth}
 		\includegraphics[width=200pt]{./img/arduinoUNOExplicado.png}
 	\end{column}
 \end{columns}
 \end{frame}
 
-\begin{frame}{Variedades}
-COLUMNAS!
-\begin{itemize}
- \item Placas
- \begin{itemize}
-  \item UNO
-  \item Mega
-  \item Pro
-  \item Micro
-  \item Fio
-  \item Robot
-  \item LilyPad
- \end{itemize}
 
- \item Shields
+
+% % % % % % % % % %
+\begin{frame}{Variedades}
+
+\begin{columns}
+\begin{column}{0.25\textwidth}
+\begin{itemize}
+\item Placas
+\begin{itemize}
+\item UNO
+\item Mega
+\item Pro
+\item Micro
+\item Fio
+\item Robot
+\item LilyPad
+\item ...
 \end{itemize}
-% \includegraphics[width=200pt]{./img/secam.png}
+\item Shields
+\begin{itemize}
+\item Xbee
+\item Motor Control
+\item Wifi
+\item Ethernet
+\item ...
+\end{itemize}
+\end{itemize}
+\end{column}
+
+\begin{column}{0.75\textwidth}
+\begin{columns}
+\begin{column}{0.55\textwidth}
+\begin{center}
+\includegraphics[width=100pt]{./img/arduino_esplora.png}
+
+
+\includegraphics[width=150pt]{./img/arduino_robot.png}
+
+
+\includegraphics[width=100pt]{./img/shield_wifi.png}
+\end{center}
+\end{column}
+\begin{column}{0.2\textwidth}
+\begin{center}
+\includegraphics[width=50pt]{./img/arduino_pro_mini.png}
+
+
+\includegraphics[width=70pt]{./img/Arduino_Uno.png}
+
+
+\includegraphics[width=70pt]{./img/shield_ethernet.png}
+\end{center}
+\end{column}
+\end{columns}
+
+\end{column}
+\end{columns}
+
+
+
+
 \end{frame}
 
+% % % % % % % % % %
 \begin{frame}{Onde buscar?}
 \begin{itemize}
 	\item http://arduino.cc
 	\item http://arduino.cc/en/Tutorial/HomePage
+	\item http://blog.bricogeek.com
+	\item http://tallerarduino.com
+	\item http://playground.arduino.cc/
 
 \end{itemize}
-
 \end{frame}
 
 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{A cacharrear!}
 \begin{frame}
 \huge{\centerline{\textbf{\color{blue} \insertsection}}}
 \end{frame}
 
+
+
+% % % % % % % % % %
 \begin{frame}{Blink}
 
 \end{frame}
 
 
+% % % % % % % % % %
 \begin{frame}{PWM e Blink}
 
 \end{frame}
 
-
+% % % % % % % % % %
 \begin{frame}{Temperatura}
 
 \end{frame}
 
+
+
+% % % % % % % % % %
 \begin{frame}{Sensor ultrasons}
 
 \end{frame}
 
+
+% % % % % % % % % %
 \begin{frame}{Imperial March}
 
 \end{frame}
